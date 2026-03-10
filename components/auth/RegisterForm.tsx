@@ -24,14 +24,14 @@ export function RegisterForm({ onSwitch }: RegisterFormProps) {
       <form className="space-y-6" onSubmit={(event) => event.preventDefault()}>
         {/* Ligne 1: Identifiants */}
         <div className="grid grid-cols-1 gap-4 md:grid-cols-3">
-          <InputField label="Nom complet" placeholder="Jean" icon={User} compact />
-          <InputField label="Email" type="email" placeholder="jean@pme.fr" icon={Mail} compact />
+          <InputField label="Nom complet" placeholder="Mohamed Ali" icon={User} compact />
+          <InputField label="Email" type="email" placeholder="mohamed.ali@example.com" icon={Mail} compact />
           <InputField label="Mot de passe" type="password" placeholder="••••••••" icon={Lock} compact />
         </div>
 
         {/* Ligne 2: Entreprise */}
         <div className="grid grid-cols-1 gap-4 md:grid-cols-3">
-          <InputField label="Téléphone" type="tel" placeholder="+33..." compact />
+          <InputField label="Téléphone" type="tel" placeholder="+216..." compact />
           <SelectField label="Type d'entreprise" compact options={['PME', 'Agence']} />
           <InputField label="Taille" placeholder="10-50" compact />
         </div>
